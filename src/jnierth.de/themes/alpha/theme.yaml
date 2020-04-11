@@ -1,0 +1,15 @@
+name: alpha
+license: MIT
+licenselink: 'https://github.com/jdnierth/static-website/LICENSE'
+description: ''
+homepage: 'http://jnierth.de/'
+tags: []
+features: []
+min_version: '0.41'
+author:
+  name: 'jnierth'
+  homepage: 'http://jnierth.de'
+original:
+  name: ''
+  homepage: ''
+  repo: ''
