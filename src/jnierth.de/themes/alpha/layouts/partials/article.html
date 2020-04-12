@@ -1,3 +1,5 @@
+Article page
+
 <h1>{{ .Title }}</h1>
 
 <p>
@@ -6,12 +8,10 @@
 
 {{ .Content }}
 
-<!-- Tags -->
-{{ if isset .Params "tags" }}
-{{ $baseURL := .Site.BaseURL }}
-<ul class="tags">
-    {{ range .Params.tags }}
-    <li> <a href="{{ $baseURL }}tags/{{ . | urlize }}/">#{{ . }}</a> </li>
+{{ if or (.Params.projektTypen) (.Params.projectTypes) }}
+<ul>
+    {{ range or (.GetTerms "projektTypen") (.GetTerms "projectTypes") }}
+    <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
     {{ end }}
 </ul>
 {{ end }}

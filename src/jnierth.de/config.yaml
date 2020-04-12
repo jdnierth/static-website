@@ -23,6 +23,10 @@ languages:
         - url: /de/kontakt/
           name: Kontakt
           weight: 2
+    taxonomies:
+      category: categories
+      tag: tags
+      projektType: projektTypen
   en:
     description: "Web Engineer with a passion for clean, maintainable code and work on useful tools, web-applications or -sites."
     languageName: English
@@ -39,3 +43,7 @@ languages:
         - url: /contact/
           name: Contact
           weight: 2
+    taxonomies:
+      category: categories
+      tag: tags
+      projectType: projectTypes
