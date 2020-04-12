@@ -1,9 +1,7 @@
 ---
 title: "Oil"
 date: 2011-04-11T15:51:37+02:00
-draft: true
-slug: "oil"
+draft: false
 type: "project"
 ---
-## OIL
-OIL Lorem ipsum
+Englische Version von OIL

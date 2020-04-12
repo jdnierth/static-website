@@ -3,21 +3,39 @@ languageCode: en-us
 title: jnierth
 theme: "alpha"
 Paginate: 5
-menu:
-  main:
-    - identifier: project
-      name: Project
-      url: /projects/
-      weight: 2
-    - identifier: design
-      name: Design
-      url: /designs/
-      weight: 3
-    - identifier: faq
-      name: About
-      url: /about/
-      weight: 4
-    - identifier: contact
-      name: Contact
-      url: /contact/
-      weight: 5
+DefaultContentLanguage: de
+defaultContentLanguageInSubdir: true
+languages:
+  de:
+    description: "Web Engineer mit Leidenschaft für Web-Architekturen und wartbarem Code. Passion für Automatisierung
+     von Prozessen und Arbeit an Projekten mit praktischem Hintergrund."
+    languageName: Deutsch
+    title: Jessica Nierth - Web-Entwickler
+    weight: 1
+    menu:
+      main:
+        - url: /projekte/
+          name: Projekt
+          weight: 0
+        - url: /de/designs/
+          name: Design
+          weight: 1
+        - url: /de/kontakt/
+          name: Kontakt
+          weight: 2
+  en:
+    description: "Web Engineer with a passion for clean, maintainable code and work on useful tools, web-applications or -sites."
+    languageName: English
+    title: Jessica Nierth - Web-Engineer
+    weight: 2
+    menu:
+      main:
+        - url: /projects/
+          name: Project
+          weight: 0
+        - url: /designs/
+          name: Design
+          weight: 1
+        - url: /contact/
+          name: Contact
+          weight: 2
