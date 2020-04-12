@@ -2,7 +2,7 @@ baseURL: 'http://example.org/'
 languageCode: en-us
 title: jnierth
 theme: "alpha"
-Paginate: 5
+Paginate: 1
 DefaultContentLanguage: de
 defaultContentLanguageInSubdir: true
 languages:

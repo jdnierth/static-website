@@ -1,12 +1,7 @@
-
 {{ if .Site.IsMultiLingual }}
-    {{ range .Site.Languages }}
-        {{ if eq . $.Site.Language }}
-            <li><a href="#" class="active">{{ .LanguageName }}</a></li>
-        {{ else }}
-            {{ range $.Translations }}
-                <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
-            {{ end }}
-        {{ end }}
+<ul>
+    {{ range $.Site.Home.AllTranslations }}
+    <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
     {{ end }}
+</ul>
 {{ end }}

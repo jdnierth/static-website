@@ -5,8 +5,5 @@ draft: false
 type: "project"
 translationKey: "project"
 projektTypen: ["IT"]
-categories: ["lyric"]
-tags: ["pop", "90s"]
-
 ---
 Deutsche Version von OIL 

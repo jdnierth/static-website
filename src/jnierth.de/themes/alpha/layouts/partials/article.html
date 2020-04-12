@@ -8,10 +8,4 @@ Article page
 
 {{ .Content }}
 
-{{ if or (.Params.projektTypen) (.Params.projectTypes) }}
-<ul>
-    {{ range or (.GetTerms "projektTypen") (.GetTerms "projectTypes") }}
-    <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
-    {{ end }}
-</ul>
-{{ end }}
+{{ partial "tag-list.html" . }}
