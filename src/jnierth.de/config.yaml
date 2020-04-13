@@ -2,7 +2,7 @@ baseURL: 'http://jessica/'
 languageCode: en-us
 title: jnierth
 theme: "alpha"
-Paginate: 4
+Paginate: 1
 DefaultContentLanguage: de
 defaultContentLanguageInSubdir: true
 taxonomies:

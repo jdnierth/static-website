@@ -1,10 +1,10 @@
 <!-- Header -->
 {{ partial "header.html" . }}
+<h1>List</h1>
 
 <!-- Loop through all posts -->
 {{ $paginator := .Paginate (where .Pages "Type" "project") }}
 {{ range .Paginator.Pages }}
-<h1>List</h1>
     {{ partial "project-list-item.html" .}}
     {{ partial "project-tag-list-projecttypes.html" .}}
     {{ partial "project-tag-cloud-projecttypes.html" .}}
