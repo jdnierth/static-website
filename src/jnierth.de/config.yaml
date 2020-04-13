@@ -5,6 +5,12 @@ theme: "alpha"
 Paginate: 4
 DefaultContentLanguage: de
 defaultContentLanguageInSubdir: true
+taxonomies:
+  applicationtype: applicationtypes
+  category: categories
+  genre: genres
+  programminglanguage: programminglanguages
+  tag: tags
 languages:
   de:
     description: "Web Engineer mit Leidenschaft für Web-Architekturen und wartbarem Code. Passion für Automatisierung
@@ -23,13 +29,6 @@ languages:
         - url: /de/kontakt/
           name: Kontakt
           weight: 2
-    taxonomies:
-      anwendungstyp: anwendungstypen
-      category: categories
-      genre: genres
-      projekttyp: projekttypen
-      programmiersprache: programmiersprachen
-      tag: tags
   en:
     description: "Web Engineer with a passion for clean, maintainable code and work on useful tools, web-applications or -sites."
     languageName: English
@@ -46,10 +45,4 @@ languages:
         - url: /contact/
           name: Contact
           weight: 2
-    taxonomies:
-      applicationtype: applicationtypes
-      category: categories
-      genre: genres
-      projecttype: projecttypes
-      programminglanguage: programminglanguages
-      tag: tags
+

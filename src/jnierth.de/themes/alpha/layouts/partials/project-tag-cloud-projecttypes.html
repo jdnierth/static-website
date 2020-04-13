@@ -1,0 +1,12 @@
+{{ if or (.Params.applicationtypes) (.Params.programminglanguages) }}
+<h3>Tag cloud</h3>
+<ul>
+    {{ range $key, $value := .Site.Taxonomies.programminglanguages.ByCount }}
+    <li><a href="/blog/tags/{{ $value.Name | urlize }}">{{ $value.Name | title }}</a> ({{ $value.Count }})</li>
+    {{ end }}
+
+    {{ range $key, $value := .Site.Taxonomies.applicationtypes.ByCount }}
+    <li><a href="/blog/tags/{{ $value.Name | urlize }}">{{ $value.Name | title }}</a> ({{ $value.Count }})</li>
+    {{ end }}
+</ul>
+{{ end }}

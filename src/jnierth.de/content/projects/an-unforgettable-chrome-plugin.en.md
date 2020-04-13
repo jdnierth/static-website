@@ -1,11 +1,11 @@
 ---
-title: "Ein unvergessliches Chrome Plugin"
+title: "An unforgettable Chrome Plugin"
 date: 2018-10-14T15:51:37+02:00
 draft: false
 type: "project"
 translationKey: "project"
-applicationtypes: ["Plugin"]
-programminglanguages: ["JavaScript", "LESS"]
+applicationtypes: ["Plugin","Germanenglish"]
+programminglanguages: ["a", "b"]
 ide: "IntelliJ"
 server: false
 agency: Orchard
