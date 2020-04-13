@@ -34,3 +34,5 @@
   translation: "Ja"
 - id: no1
   translation: "Nein"
+- id: confidential
+  translation: "Vertraulich"

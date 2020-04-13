@@ -32,3 +32,5 @@
   translation: "Yes"
 - id: no1
   translation: "No"
+- id: confidential
+  translation: "Confidential"
