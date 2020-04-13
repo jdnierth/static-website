@@ -1,0 +1,10 @@
+
+{{ if .IsNamedParams }}
+<div class="{{ if .Get "class" }}{{ .Get "class" }}{{ else }}vimeo-container{{ end }}">
+<iframe src="https://www.youtube.com/embed/{{ .Get "id" }}"frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+{{ else }}
+<div class="{{ if len .Params | eq 2 }}{{ .Get 1 }}{{ else }}vimeo-container{{ end }}">
+    <iframe src="https://www.youtube.com/embed/{{ .Get 0 }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+{{ end }}
