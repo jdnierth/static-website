@@ -11,12 +11,14 @@
     </li>
     {{ end }}
     {{ if .Params.programminglanguages }}
-    <li>{{ if gt (len .Params.programminglanguages) 1 }}{{ i18n "programminglanguages" }}{{ else }} {{ i18n "programminglanguage" }} {{end}}:
+    <li>{{ if gt (len .Params.programminglanguages) 1 }}{{ i18n "programminglanguages" }}{{ else }}{{ i18n "programminglanguage" }} {{end}}:
         {{ range $index, $language := .Params.programminglanguages }}{{ if gt $index 0 }}, {{ end }}<a href="/{{ $.Site.Language }}/{{ i18n "programminglanguages"| urlize }}/{{ $language | urlize }}">{{ . }}</a>{{ end }}
     </li>
     {{ end }}
-    {{ range $elem := (.Params.platforms) }}
-        <li>{{ i18n "platform" }}: {{ $elem }}</li>
+    {{ if .Params.platforms }}
+    <li>{{ if gt (len .Params.platforms) 1 }}{{ i18n "platform" }}{{ else }}{{ i18n "platforms" }}{{end}}:
+        {{ range $index, $platform := .Params.platforms }}{{ if gt $index 0 }}, {{ end }}{{$platform}}{{ end }}
+    </li>
     {{ end }}
     {{ if(.Params.projectgroup) }}<li>{{ i18n "projectgroup" }}: {{ .Params.projectgroup }}</li>{{end}}
     {{ if eq .Params.responsive false }}<li>{{ i18n "responsive" }}: {{ i18n "no1" }}</li>{{end}}

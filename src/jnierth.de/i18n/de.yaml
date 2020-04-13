@@ -28,6 +28,8 @@
   translation: "Anpassungsfähig"
 - id: platform
   translation: "Plattform"
+- id: platforms
+  translation: "Plattformen"
 - id: yes1
   translation: "Ja"
 - id: no1

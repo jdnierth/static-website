@@ -15,7 +15,7 @@ country: Australien
 frontend: ["Erstellung anpassungsfähiger browserübergreifender HTML-Vorlagen"]
 backend: []
 general: ["Entwicklung", "Deployment"]
-platforms: ["Desktop"]
+platforms: ["Desktop", "Tablet", "Mobile"]
 projectgroup: "Greenfield"
 responsive: true
 languages: ["Englisch"]

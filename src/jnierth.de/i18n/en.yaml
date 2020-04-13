@@ -26,6 +26,8 @@
   translation: "Responsive"
 - id: platform
   translation: "Platform"
+- id: platforms
+  translation: "Platforms"
 - id: yes1
   translation: "Yes"
 - id: no1
