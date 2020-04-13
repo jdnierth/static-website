@@ -2,9 +2,9 @@
 <h3>Kundeninformationen</h3>
 <ul>
     {{ if ne .Params.private true }}
-        {{ if(.Params.client)}}<li>Kunde: {{ .Params.client }}</li>{{end}}
-        {{ if(.Params.agency)}}<li>Agency: {{ .Params.agency }}</li>{{end}}
+        {{ if(.Params.client)}}<li>{{ i18n "client" }}: {{ .Params.client }}</li>{{end}}
+        {{ if(.Params.agency)}}<li>{{ i18n "agency" }}: {{ .Params.agency }}</li>{{end}}
     {{ end }}
-    {{ if(.Params.country)}}<li>Country: {{ .Params.country }}</li>{{end}}
+    {{ if(.Params.country)}}<li>{{ i18n "country" }}: {{ .Params.country }}</li>{{end}}
 </ul>
 {{ end }}

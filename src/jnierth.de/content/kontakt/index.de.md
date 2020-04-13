@@ -2,4 +2,4 @@
 title: "Kontakt"
 translationKey: "contact"
 ---
-Deutsche Seite
+Es werden keine Daten gesammelt.

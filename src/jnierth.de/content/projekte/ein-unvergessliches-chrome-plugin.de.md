@@ -12,10 +12,10 @@ agency: Orchard
 client: RMIT
 private: true
 country: Australien
-frontend: ["Development"]
+frontend: ["Entwicklung"]
 backend: []
 general: ["Aufwandsschätzung", "Technische Dokumentation", "Entwicklung", "Deployment"]
-plattforms: ["Desktop"]
+platforms: ["Desktop"]
 projectgroup: "Greenfield"
 responsive: ""
 languages: ["Englisch"]

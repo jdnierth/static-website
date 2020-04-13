@@ -8,13 +8,17 @@ $padding: 15px;
   margin: 0 auto;
 }
 
+.col-4 {
+  padding: 0 $padding;
+  width: calc(100% * (4 / 12) - (2 * #{$padding}));
+}
 
 .col-8 {
   padding: 0 $padding;
   width: calc(100% * (8 / 12) - (2 * #{$padding}));
 }
 
-.col-4 {
+.col-12 {
   padding: 0 $padding;
-  width: calc(100% * (4 / 12) - (2 * #{$padding}));
+  width: calc(100% - (2 * #{$padding}));
 }

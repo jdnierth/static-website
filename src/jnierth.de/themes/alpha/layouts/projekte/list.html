@@ -1,19 +1,19 @@
 <!-- Header -->
 {{ partial "header.html" . }}
-<!-- Loop through all posts -->
-<h1>Liste</h1>
-{{ $paginator := .Paginate (where .Pages "Type" "project") }}
-{{ range .Paginator.Pages }}
-    {{ partial "project-list-item.html" .}}
-    {{ partial "project-tag-list-projecttypes.html" .}}
-    {{ partial "project-tag-cloud-projecttypes.html" .}}
-{{ end }}
-<!-- End loop -->
 
-<!-- Pagination -->
-{{ partial "page-navigation-numbers.html" . }}
-single
-{{ partial "page-navigation-single.html" . }}
+<div class="container">
+    <div class="col-8">
+    <h1>Liste</h1>
+    {{ $paginator := .Paginate (where .Pages "Type" "project") }}
+    {{ range .Paginator.Pages }}
+        {{ partial "project-list-item.html" .}}
+        {{ partial "project-tag-cloud-projecttypes.html" .}}
+    {{ end }}
+    </div>
 
-<!-- Footer -->
-{{ partial "footer.html" . }}
+    <!-- Pagination -->
+    {{ partial "page-navigation-numbers.html" . }}
+
+    <!-- Footer -->
+    {{ partial "footer.html" . }}
+</div>

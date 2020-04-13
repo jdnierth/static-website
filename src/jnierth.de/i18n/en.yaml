@@ -1,0 +1,32 @@
+- id: programminglanguages
+  translation: "Programming languages"
+- id: programminglanguages2
+  translation: "programminglanguages"
+- id: applicationtypes
+  translation: "Application types"
+- id: applicationtype
+  translation: "Application type"
+- id: toolsupport
+  translation: "Tools"
+- id: country
+  translation: "Country"
+- id: client
+  translation: "Client"
+- id: agency
+  translation: "Agency"
+- id: services
+  translation: "Services"
+- id: technicalfacts
+  translation: "Technical facts"
+- id: language
+  translation: "Language"
+- id: projectgroup
+  translation: "Project group"
+- id: responsive
+  translation: "Responsive"
+- id: platform
+  translation: "Platform"
+- id: yes1
+  translation: "Yes"
+- id: no1
+  translation: "No"

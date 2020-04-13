@@ -1,15 +1,31 @@
-{{ if or (.Params.plattforms) (.Params.projectgroup)}}
-<h3>Technische Fakten</h3>
+{{ if or (.Params.platforms) (.Params.projectgroup) (.Params.responsive) (.Params.languages) (.Params.cms) (.Params.ide) (.Params.server) (.Params.applicationtypes) }}
+<h3>{{ i18n "technicalfacts"}}</h3>
 <ul>
-    {{ range $elem := (.Params.plattforms) }}
-        <li>Plattform: {{ $elem }}</li>
+    {{ if(.Params.applicationtypes) }}
+    <li>
+        {{ if gt (len .Params.applicationtypes) 1 }}{{ i18n "applicationtypes" }}{{ else }}{{ i18n "applicationtype" }}{{end}}:
+        {{ range $index, $application := .Params.applicationtypes }}
+        {{ if gt $index 0 }}, {{ end }}
+        <a href="/{{ $.Site.Language }}/{{ i18n "applicationtypes"| urlize }}/{{ $application | urlize }}">{{ . }}</a>
+        {{ end }}
+    </li>
     {{ end }}
-    {{ if(.Params.projectgroup)}}<li>Projektgruppe: {{ .Params.projectgroup }}</li>{{end}}
-    {{ if eq .Params.responsive true}}<li>Responsive: ja</li>{{end}}
-    {{ if eq .Params.responsive false}}<li>Responsive: nein</li>{{end}}
+    {{ if .Params.programminglanguages }}
+    <li>{{ if gt (len .Params.programminglanguages) 1 }}{{ i18n "programminglanguages" }}{{ else }} {{ i18n "programminglanguage" }} {{end}}:
+        {{ range $index, $language := .Params.programminglanguages }}{{ if gt $index 0 }}, {{ end }}<a href="/{{ $.Site.Language }}/{{ i18n "programminglanguages"| urlize }}/{{ $language | urlize }}">{{ . }}</a>{{ end }}
+    </li>
+    {{ end }}
+    {{ range $elem := (.Params.platforms) }}
+        <li>{{ i18n "platform" }}: {{ $elem }}</li>
+    {{ end }}
+    {{ if(.Params.projectgroup) }}<li>{{ i18n "projectgroup" }}: {{ .Params.projectgroup }}</li>{{end}}
+    {{ if eq .Params.responsive false }}<li>{{ i18n "responsive" }}: {{ i18n "no1" }}</li>{{end}}
+    {{ if eq .Params.responsive true }}<li>{{ i18n "responsive" }}: {{ i18n "yes1" }}</li>{{end}}
     {{ range $elem := (.Params.languages) }}
-        <li>Languages: {{ $elem }}</li>
+        <li>{{ i18n "language" }}: {{ $elem }}</li>
     {{ end }}
-    {{ if(.Params.cms)}}<li>CMS: {{ .Params.cms }}</li>{{end}}
+    {{ if(.Params.cms) }}<li>CMS: {{ .Params.cms }}</li>{{end}}
+    {{ if(.Params.ide) }}<li>IDE: {{ .Params.ide }}</li>{{end}}
+    {{ if(.Params.server) }}<li>Server: {{ .Params.server }}</li>{{end}}
 </ul>
 {{ end }}

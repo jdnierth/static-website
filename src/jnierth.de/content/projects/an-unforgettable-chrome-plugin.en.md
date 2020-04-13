@@ -4,8 +4,8 @@ date: 2018-10-14T15:51:37+02:00
 draft: false
 type: "project"
 translationKey: "project"
-applicationtypes: ["Plugin","Germanenglish"]
-programminglanguages: ["a", "b"]
+applicationtypes: ["Plugin"]
+programminglanguages: ["JavaScript", "LESS"]
 ide: "IntelliJ"
 server: false
 agency: Orchard
@@ -15,7 +15,7 @@ country: Australien
 frontend: ["Development"]
 backend: []
 general: ["Aufwandsschätzung", "Technische Dokumentation", "Entwicklung", "Deployment"]
-plattforms: ["Desktop"]
+platforms: ["Desktop"]
 projectgroup: "Greenfield"
 responsive: ""
 languages: ["Englisch"]

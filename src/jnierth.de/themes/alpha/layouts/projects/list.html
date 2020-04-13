@@ -6,11 +6,9 @@
 {{ $paginator := .Paginate (where .Pages "Type" "project") }}
 {{ range .Paginator.Pages }}
     {{ partial "project-list-item.html" .}}
-    {{ partial "project-tag-list-projecttypes.html" .}}
     {{ partial "project-tag-cloud-projecttypes.html" .}}
 {{ end }}
 <!-- End loop -->
-
 
 <!-- Pagination -->
 {{ partial "page-navigation-numbers.html" . }}
