@@ -1,11 +1,8 @@
-{{ $paginator := .Paginate (where .Pages "Type" "project") }}
-
-{{ if or ($paginator.HasPrev) ($paginator.HasNext) }}
-    {{ if $paginator.HasNext }}
-        <a href="{{ .URL }}page/{{ $paginator.Next.PageNumber }}">&larr; Ältere Beiträge&nbsp;&nbsp;&nbsp;&nbsp;</a>
+<div>
+    {{ with .PrevInSection }}
+    < <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
     {{ end }}
-
-    {{ if $paginator.HasPrev }}
-        <a href="{{ .URL }}page/{{ $paginator.Prev.PageNumber }}">Neuere Beiträge &rarr;</a>
+    {{ with .NextInSection }}
+    <a class="next" href="{{.Permalink}}"> {{.Title}}</a> >
     {{ end }}
-{{ end }}
+</div>
