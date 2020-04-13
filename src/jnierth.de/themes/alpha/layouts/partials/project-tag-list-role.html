@@ -1,0 +1,26 @@
+{{ if or (.Params.frontend) }}
+<h3>Frontend</h3>
+<ul>
+    {{ range $elem := (.Params.frontend) }}
+        <li>{{ $elem }}</li>
+    {{ end }}
+</ul>
+{{ end }}
+
+{{ if or (.Params.backend) }}
+<h3>Backend</h3>
+<ul>
+    {{ range $elem := (.Params.backend) }}
+        <li>{{ $elem }}</li>
+    {{ end }}
+</ul>
+{{ end }}
+
+{{ if or (.Params.general) }}
+<h3>Weitere Aufgaben</h3>
+<ul>
+    {{ range $elem := (.Params.general) }}
+        <li>{{ $elem }}</li>
+    {{ end }}
+</ul>
+{{ end }}

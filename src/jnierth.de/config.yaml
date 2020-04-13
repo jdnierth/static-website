@@ -2,7 +2,7 @@ baseURL: 'http://example.org/'
 languageCode: en-us
 title: jnierth
 theme: "alpha"
-Paginate: 1
+Paginate: 4
 DefaultContentLanguage: de
 defaultContentLanguageInSubdir: true
 languages:
@@ -24,9 +24,12 @@ languages:
           name: Kontakt
           weight: 2
     taxonomies:
+      anwendungstyp: anwendungstypen
       category: categories
+      genre: genres
+      projekttyp: projekttypen
+      programmiersprache: programmiersprachen
       tag: tags
-      projektType: projektTypen
   en:
     description: "Web Engineer with a passion for clean, maintainable code and work on useful tools, web-applications or -sites."
     languageName: English
@@ -44,6 +47,9 @@ languages:
           name: Contact
           weight: 2
     taxonomies:
+      applicationtype: applicationtypes
       category: categories
+      genre: genres
+      projecttype: projecttypes
+      programminglanguage: programminglanguages
       tag: tags
-      projectType: projectTypes

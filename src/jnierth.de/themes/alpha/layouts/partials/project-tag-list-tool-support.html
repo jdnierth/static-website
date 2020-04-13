@@ -1,0 +1,7 @@
+{{ if (.Params.ide) }}
+<h3>Tool support</h3>
+<ul>
+    <li>IDE: {{ .Params.ide }}</li>
+    {{ if(.Params.server)}}<li>Server: {{ .Params.server }}</li>{{end}}
+</ul>
+{{ end }}

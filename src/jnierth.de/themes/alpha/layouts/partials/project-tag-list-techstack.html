@@ -1,0 +1,15 @@
+{{ if or (.Params.plattforms) (.Params.projectgroup)}}
+<h3>Technische Fakten</h3>
+<ul>
+    {{ range $elem := (.Params.plattforms) }}
+        <li>Plattform: {{ $elem }}</li>
+    {{ end }}
+    {{ if(.Params.projectgroup)}}<li>Projektgruppe: {{ .Params.projectgroup }}</li>{{end}}
+    {{ if eq .Params.responsive true}}<li>Responsive: ja</li>{{end}}
+    {{ if eq .Params.responsive false}}<li>Responsive: nein</li>{{end}}
+    {{ range $elem := (.Params.languages) }}
+        <li>Languages: {{ $elem }}</li>
+    {{ end }}
+    {{ if(.Params.cms)}}<li>CMS: {{ .Params.cms }}</li>{{end}}
+</ul>
+{{ end }}

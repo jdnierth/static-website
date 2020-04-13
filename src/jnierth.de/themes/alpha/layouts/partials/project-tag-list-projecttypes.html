@@ -1,0 +1,8 @@
+{{ if or (.Params.projekttypen) (.Params.projecttypes) }}
+<h3>Project Types</h3>
+<ul>
+    {{ range or ((.GetTerms "projekttypen") (.GetTerms "projecttypes")) }}
+    <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+    {{ end }}
+</ul>
+{{ end }}

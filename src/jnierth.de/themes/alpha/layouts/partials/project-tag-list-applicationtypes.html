@@ -1,0 +1,8 @@
+{{ if or (.Params.anwendungstypen) (.Params.applicationtypes) }}
+<h3>Applicationtypes</h3>
+<ul>
+    {{ range  $el := or ((.Params.anwendungstypen) (.Params.applicationtypes)) }}
+    <li>{{ $el }}</li>
+    {{ end }}
+</ul>
+{{ end }}
