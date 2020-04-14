@@ -1,7 +1,9 @@
 {{ if .Site.IsMultiLingual }}
 <ul>
     {{ range $.Site.Home.AllTranslations }}
-    <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+    <li class="{{ if eq .Language.Lang $.Site.Language.Lang}}active{{end}}">
+        <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+    </li>
     {{ end }}
 </ul>
 {{ end }}
