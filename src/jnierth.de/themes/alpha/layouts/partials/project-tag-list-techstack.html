@@ -1,18 +1,23 @@
+
+{{ $programminglanguages := $.Param (i18n "programminglanguages2") }}
+{{ $applicationtypes3 := $.Param (i18n "applicationtypes2") }}
+
 {{ if or (.Params.platforms) (.Params.projectgroup) (.Params.responsive) (.Params.languages) (.Params.cms) (.Params.ide) (.Params.server) (.Params.applicationtypes) }}
 <h3>{{ i18n "technicalfacts"}}</h3>
 <ul>
-    {{ if(.Params.applicationtypes) }}
+    {{ if $applicationtypes3 }}
     <li>
-        {{ if gt (len .Params.applicationtypes) 1 }}{{ i18n "applicationtypes" }}{{ else }}{{ i18n "applicationtype" }}{{end}}:
-        {{ range $index, $application := .Params.applicationtypes }}
+        {{ if gt (len $applicationtypes3) 1 }}{{ i18n "applicationtypes" }}{{ else }}{{ i18n "applicationtype" }}{{end}}:
+        {{ range $index, $application := $applicationtypes3 }}
         {{ if gt $index 0 }}, {{ end }}
-        <a href="/{{ $.Site.Language }}/{{ i18n "applicationtypes"| urlize }}/{{ $application | urlize }}">{{ . }}</a>
+        <a href="/{{ $.Site.Language }}/{{ i18n "applicationtypes2"| urlize }}/{{ $application | urlize }}">{{ . }}</a>
         {{ end }}
     </li>
     {{ end }}
-    {{ if .Params.programminglanguages }}
-    <li>{{ if gt (len .Params.programminglanguages) 1 }}{{ i18n "programminglanguages" }}{{ else }}{{ i18n "programminglanguage" }} {{end}}:
-        {{ range $index, $language := .Params.programminglanguages }}{{ if gt $index 0 }}, {{ end }}<a href="/{{ $.Site.Language }}/{{ i18n "programminglanguages2"| urlize }}/{{ $language | urlize }}">{{ . }}</a>{{ end }}
+
+    {{ if $programminglanguages }}
+    <li>{{ if gt (len $programminglanguages) 1 }}{{ i18n "programminglanguages" }}{{ else }}{{ i18n "programminglanguage" }} {{end}}:
+        {{ range $index, $language := $programminglanguages }}{{ if gt $index 0 }}, {{ end }}<a href="/{{ $.Site.Language }}/{{ i18n "programminglanguages2"| urlize }}/{{ $language | urlize }}">{{ . }}</a>{{ end }}
     </li>
     {{ end }}
     {{ if .Params.platforms }}

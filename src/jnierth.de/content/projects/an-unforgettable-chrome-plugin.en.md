@@ -27,4 +27,4 @@ Scientists do not recommend the font to be used on whole pages therefore the plu
  highlighted text on short paragraphs. Instructions on how to use the plugin can be found <a href="https://chrome
  .google.com/webstore/detail/sans-forgetica-study-mode/jojbobbpjflbaekncckdbanjoakgpbbc?hl=en" target="_blank" rel="noopener">here</a>.
 
-{{< youtube PO2Eo6D5tNQ >}}
+{{< video id="PO2Eo6D5tNQ" class="flex-video" >}}

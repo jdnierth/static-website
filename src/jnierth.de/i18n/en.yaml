@@ -10,6 +10,8 @@
   translation: "Application types"
 - id: applicationtype
   translation: "Application type"
+- id: applicationtypes2
+  translation: "applicationtypes"
 - id: toolsupport
   translation: "Tools"
 - id: country

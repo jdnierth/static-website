@@ -4,7 +4,7 @@ date: 2018-09-09T15:51:37+02:00
 draft: false
 type: "project"
 translationKey: "project"
-applicationtypes: ["Webanwendung"]
+anwendungstypen: ["Webanwendung"]
 programminglanguages: ["JavaScript", "VueJS", "LESS"]
 ide: "IntelliJ"
 server: "Webpack"

@@ -6,9 +6,7 @@ Paginate: 4
 DefaultContentLanguage: de
 defaultContentLanguageInSubdir: true
 taxonomies:
-  applicationtype: applicationtypes
   category: categories
-  genre: genres
   tag: tags
 languages:
   de:
@@ -29,6 +27,7 @@ languages:
           name: Kontakt
           weight: 3
     taxonomies:
+      anwendungstyp: anwendungstypen
       programmiersprache: programmiersprachen
   en:
     description: "Web Engineer with a passion for clean, maintainable code and work on useful tools, web-applications or -sites."
@@ -47,4 +46,5 @@ languages:
           name: Contact
           weight: 3
     taxonomies:
+      applicationtype: applicationtypes
       programminglanguage: programminglanguages

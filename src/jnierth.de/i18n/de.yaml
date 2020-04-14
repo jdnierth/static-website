@@ -10,6 +10,8 @@
   translation: "Anwendungstypen"
 - id: applicationtype
   translation: "Anwendungstyp"
+- id: applicationtypes2
+  translation: "anwendungstypen"
 - id: toolsupport
   translation: "Werkzeuge"
 - id: toolsupport
