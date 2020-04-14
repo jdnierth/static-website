@@ -8,6 +8,10 @@ $padding: 15px;
   margin: 0 auto;
 }
 
+.main {
+  margin: 40px 0;
+}
+
 .col-4 {
   padding: 0 $padding;
   width: calc(100% * (4 / 12) - (2 * #{$padding}));

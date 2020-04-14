@@ -8,10 +8,27 @@
     {{ end }}
     </div>
 
+    {{ $test := i18n "programminglanguages2" }}
+    {{ $test }}
+    <ul>
+        {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+        <li><a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a>
+            <ul>
+                {{ range $key, $value := $taxonomy }}
+                {{ $key }}
+                <li>True {{ $key }} </li>
+                <ul>
+                    {{ range $value.Pages }}
+                    <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
+                    {{ end }}
+                </ul>
+                {{ end }}
+            </ul>
+        </li>
+        {{ end }}
+    </ul>
 
-    <!-- Pagination -->
     {{ partial "page-navigation-numbers.html" . }}
 
-    <!-- Footer -->
 </div>
 {{ end }}
