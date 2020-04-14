@@ -1,0 +1,11 @@
+<h1>Hello Term 2</h1>
+
+{{ range .Site.Taxonomies.programminglanguages }}
+<li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+{{ end }}
+
+<h1>{{ .Title }}</h1>
+<!-- ranges through each of the content files associated with a particular taxonomy term and renders the summary.html content view -->
+{{ range .Pages }}
+{{ .Render "summary"}}
+{{ end }}

@@ -21,4 +21,4 @@ responsive: true
 languages: ["Englisch"]
 cms: false
 ---
-ein-unvergessliches-chrome-plugin.de.md
+Lorem ipsum

@@ -1,6 +1,4 @@
-<!-- Header -->
-{{ partial "header.html" . }}
-
+{{ define "main" }}
 <h1>List Designs</h1>
 
 <!-- Loop through all posts -->
@@ -23,5 +21,4 @@
 <!-- Pagination -->
 {{ partial "page-navigation-numbers.html" . }}
 
-<!-- Footer -->
-{{ partial "footer.html" . }}
+{{ end}}

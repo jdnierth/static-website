@@ -1,3 +1,7 @@
+- id: project
+  translation: "Project"
+- id: projects
+  translation: "Projects"
 - id: programminglanguages
   translation: "Programming languages"
 - id: programminglanguages2

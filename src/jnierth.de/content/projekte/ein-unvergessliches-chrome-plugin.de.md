@@ -5,7 +5,7 @@ draft: false
 type: "project"
 translationKey: "project"
 applicationtypes: ["Plugin"]
-programminglanguages: ["JavaScript", "LESS"]
+programmiersprachen: ["JavaScript", "LESS"]
 ide: "IntelliJ"
 server: false
 agency: Orchard

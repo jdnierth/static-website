@@ -1,17 +1,21 @@
-<!-- Header -->
-{{ partial "header.html" . }}
-<h1>List</h1>
+{{ define "main" }}
+<div class="container">
+<div class="col-8">
+    <h1>List</h1>
 
 <!-- Loop through all posts -->
 {{ $paginator := .Paginate (where .Pages "Type" "project") }}
 {{ range .Paginator.Pages }}
     {{ partial "project-list-item.html" .}}
-    {{ partial "project-tag-cloud-projecttypes.html" .}}
 {{ end }}
 <!-- End loop -->
 
-<!-- Pagination -->
+
+    <!-- Pagination -->
 {{ partial "page-navigation-numbers.html" . }}
 
-<!-- Footer -->
-{{ partial "footer.html" . }}
+</div>
+
+
+</div>
+{{end}}

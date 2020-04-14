@@ -1,19 +1,17 @@
-<!-- Header -->
-{{ partial "header.html" . }}
-
+{{ define "main" }}
 <div class="container">
     <div class="col-8">
     <h1>Liste</h1>
     {{ $paginator := .Paginate (where .Pages "Type" "project") }}
     {{ range .Paginator.Pages }}
         {{ partial "project-list-item.html" .}}
-        {{ partial "project-tag-cloud-projecttypes.html" .}}
     {{ end }}
     </div>
+
 
     <!-- Pagination -->
     {{ partial "page-navigation-numbers.html" . }}
 
     <!-- Footer -->
-    {{ partial "footer.html" . }}
 </div>
+{{ end }}

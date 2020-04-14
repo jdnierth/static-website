@@ -2,14 +2,13 @@ baseURL: 'http://jessica/'
 languageCode: en-us
 title: jnierth
 theme: "alpha"
-Paginate: 1
+Paginate: 4
 DefaultContentLanguage: de
 defaultContentLanguageInSubdir: true
 taxonomies:
   applicationtype: applicationtypes
   category: categories
   genre: genres
-  programminglanguage: programminglanguages
   tag: tags
 languages:
   de:
@@ -21,14 +20,16 @@ languages:
     menu:
       main:
         - url: /projekte/
-          name: Projekt
-          weight: 0
+          name: Projekte
+          weight: 1
         - url: /de/designs/
           name: Design
-          weight: 1
+          weight: 2
         - url: /de/kontakt/
           name: Kontakt
-          weight: 2
+          weight: 3
+    taxonomies:
+      programmiersprache: programmiersprachen
   en:
     description: "Web Engineer with a passion for clean, maintainable code and work on useful tools, web-applications or -sites."
     languageName: English
@@ -37,12 +38,13 @@ languages:
     menu:
       main:
         - url: /projects/
-          name: Project
-          weight: 0
+          name: Projects
+          weight: 1
         - url: /designs/
           name: Design
-          weight: 1
+          weight: 2
         - url: /contact/
           name: Contact
-          weight: 2
-
+          weight: 3
+    taxonomies:
+      programminglanguage: programminglanguages

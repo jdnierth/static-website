@@ -2,7 +2,7 @@
 <h3>Tag cloud {{ i18n "programminglanguages" }}</h3>
 <ul>
     {{ range $key, $value := .Site.Taxonomies.programminglanguages.ByCount }}
-    <li><a href="/{{ $.Site.Language }}/{{ i18n "programminglanguages"| urlize }}/{{ $value.Name | urlize }}">{{ $value.Name | title }}</a> ({{ $value.Count }})</li>
+    <li><a href="/{{ $.Site.Language }}/{{ i18n "programminglanguages2"| urlize }}/{{ $value.Name | urlize }}">{{ $value.Name | title }}</a> ({{ $value.Count }})</li>
     {{ end }}
 </ul>
 {{ end }}
