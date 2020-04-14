@@ -12,7 +12,7 @@
     {{ end }}
     {{ if .Params.programminglanguages }}
     <li>{{ if gt (len .Params.programminglanguages) 1 }}{{ i18n "programminglanguages" }}{{ else }}{{ i18n "programminglanguage" }} {{end}}:
-        {{ range $index, $language := .Params.programminglanguages }}{{ if gt $index 0 }}, {{ end }}<a href="/{{ $.Site.Language }}/{{ i18n "programminglanguages"| urlize }}/{{ $language | urlize }}">{{ . }}</a>{{ end }}
+        {{ range $index, $language := .Params.programminglanguages }}{{ if gt $index 0 }}, {{ end }}<a href="/{{ $.Site.Language }}/{{ i18n "programminglanguages2"| urlize }}/{{ $language | urlize }}">{{ . }}</a>{{ end }}
     </li>
     {{ end }}
     {{ if .Params.platforms }}
