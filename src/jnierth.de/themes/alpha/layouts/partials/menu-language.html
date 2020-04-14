@@ -1,0 +1,11 @@
+{{ if .Site.IsMultiLingual }}
+<nav class="menu-language" aria-label="{{ i18n "languagemenu" }}">
+    <ul>
+        {{ range $.Site.Home.AllTranslations }}
+        <li class="{{ if eq .Language.Lang $.Site.Language.Lang}}active{{end}}">
+            <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</nav>
+{{ end }}

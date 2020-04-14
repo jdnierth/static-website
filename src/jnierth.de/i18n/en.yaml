@@ -38,3 +38,7 @@
   translation: "No"
 - id: confidential
   translation: "Confidential"
+- id: mainmenu
+  translation: "Main Menu"
+- id: languagemenu
+  translation: "Language Switcher"

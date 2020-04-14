@@ -1,20 +1,19 @@
 <div class="container">
-<div class="col-8">
-<h1>{{ .Title }}</h1>
+    <div class="col-8">
+    <h1>{{ .Title }}</h1>
 
-<p>
-    <small>{{ .Date.Format "02.01.2006" }}</small>
-</p>
+    <p>
+        <small>{{ .Date.Format "02.01.2006" }}</small>
+    </p>
 
-{{ .Content }}
+    {{ .Content }}
+    </div>
+    <!-- /.col-8 -->
+    <div class="col-4">
+    {{ partial "project-tag-list-techstack.html" . }}
+    {{ partial "project-tag-list-role.html" . }}
+    {{ partial "project-tag-list-client.html" . }}
+    </div>
+    <!-- /.col-4 -->
 </div>
-<!-- /.col-8 -->
-<div class="col-4">
-{{ partial "project-tag-list-techstack.html" . }}
-{{ partial "project-tag-list-role.html" . }}
-{{ partial "project-tag-list-client.html" . }}
-</div>
-<!-- /.col-4 -->
-</div>
-<!-- /.main -->
 {{ partial "page-navigation-single.html" . }}

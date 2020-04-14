@@ -40,3 +40,7 @@
   translation: "Nein"
 - id: confidential
   translation: "Vertraulich"
+- id: mainmenu
+  translation: "Hauptmenü"
+- id: languagemenu
+  translation: "Sprachauswahl Menü"
