@@ -4,13 +4,13 @@
   translation: "Projects"
 - id: programminglanguages
   translation: "Programming languages"
-- id: programminglanguages2
+- id: programminglanguagetax
   translation: "programminglanguages"
 - id: applicationtypes
   translation: "Application types"
 - id: applicationtype
   translation: "Application type"
-- id: applicationtypes2
+- id: applicationtax
   translation: "applicationtypes"
 - id: toolsupport
   translation: "Tools"
