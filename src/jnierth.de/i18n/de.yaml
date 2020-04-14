@@ -44,3 +44,5 @@
   translation: "Hauptmenü"
 - id: languagemenu
   translation: "Sprachauswahl Menü"
+- id: readon
+  translation: "Weiterlesen"

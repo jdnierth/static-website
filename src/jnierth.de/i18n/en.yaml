@@ -42,3 +42,5 @@
   translation: "Main Menu"
 - id: languagemenu
   translation: "Language Switcher"
+- id: readon
+  translation: "Continue reading"
