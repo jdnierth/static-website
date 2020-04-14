@@ -22,8 +22,13 @@ languages: ["Englisch"]
 cms: false
 ---
 
-Das RMIT, eine Universität in Melbourne, erarbeitete eine neue Schriftart die es Menschen erleichtern soll einmal Gelesenes besser einzuprägen. Die Schriftart kann entweder von <a href="http://sansforgetica.rmit/" target="_blank" rel="noopener">dieser Website</a> für Windows oder Mac heruntergeladen und in eigenen Word-Dokumenten verwendet werden oder mit Hilfe eines Chrome Plugin auf Webseiten eingesetzt werden.
+Das RMIT, eine Universität in Melbourne, erarbeitete eine neue Schriftart die es Menschen erleichtern soll einmal
+ Gelesenes besser einzuprägen. Die Schriftart kann entweder von [dieser Website](http://sansforgetica.rmit/) für Windows oder Mac
+  heruntergeladen und in eigenen Word-Dokumenten verwendet werden oder mit Hilfe eines Chrome Plugin auf Webseiten eingesetzt werden.
 
-Nach Aussagen der Wissenschaftler soll die Schriftart nur auf wenige Sätze angewandt werden. Aus diesem Grund wurde das Plugin so konstruiert, dass der Nutzer nach der Aktivierung des Plugins auf der jeweiligen Webseite eine Text-Passage mit dem Cursor markieren muss, damit der Text mit der Sans Forgetica Schriftart ersetzt wird. Weitere Instruktionen finden sie <a href="https://chrome.google.com/webstore/detail/sans-forgetica-study-mode/jojbobbpjflbaekncckdbanjoakgpbbc?hl=en" target="_blank" rel="noopener">hier</a>.
+Nach Aussagen der Wissenschaftler soll die Schriftart nur auf wenige Sätze angewandt werden. Aus diesem Grund wurde
+ das Plugin so konstruiert, dass der Nutzer nach der Aktivierung des Plugins auf der jeweiligen Webseite eine Text
+ -Passage mit dem Cursor markieren muss, damit der Text mit der Sans Forgetica Schriftart ersetzt wird. Weitere
+  Instruktionen finden sie [hier](https://chrome.google.com/webstore/detail/sans-forgetica-study-mode/jojbobbpjflbaekncckdbanjoakgpbbc?hl=en).
 
 {{< video id="PO2Eo6D5tNQ" class="flex-video" >}}

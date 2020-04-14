@@ -4,9 +4,9 @@
 
     <div class="col-12">
     {{ range .Data.Pages }}
-        <ul>
-            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-        </ul>
+        <div>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </div>
     {{ end }}
     </div>
 </div>

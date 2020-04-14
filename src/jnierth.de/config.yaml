@@ -5,6 +5,7 @@ theme: "alpha"
 Paginate: 4
 DefaultContentLanguage: de
 defaultContentLanguageInSubdir: true
+summaryLength: 100
 taxonomies:
   category: categories
   tag: tags
