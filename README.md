@@ -4,6 +4,9 @@
 ## Windows
 1. Install Chocolatery: Follow the installation guide of [Chocolatery Software Managment Tool](https://chocolatey.org/install). 
 
+# Develop
+1. Run the following command `make serve`from the `src` folder
+
 # Theme
 ## Syntax
 * Uses `yaml` for configuration files
