@@ -6,6 +6,7 @@
 
 # Develop
 1. Run the following command `make serve`from the `src` folder
+2. The log will tell you under which domain the project is available from within the browser
 
 # Theme
 ## Syntax
