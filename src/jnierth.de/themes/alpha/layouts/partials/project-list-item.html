@@ -1,11 +1,11 @@
 <h2>{{ .Title }}</h2>
 
+{{ with .Date }}
+    {{ partial "date.html" (dict "date" . "language" $.Page.Language "monate" $.Site.Data.monate) }}
+{{ end }}
 <p>
-    <small>{{ .Date.Format "02.01.2006" }}</small>
-</p>
-
 {{ .Summary }}
-
+</p>
 <p>
     <a class="readmore" href="{{ .RelPermalink }}">{{ i18n "readon" }}</a>
 </p>

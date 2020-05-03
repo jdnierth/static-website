@@ -1,11 +1,9 @@
 <div class="container">
     <div class="col-8">
     <h1>{{ .Title }}</h1>
-
-    <p>
-        <small>{{ .Date.Format "02.01.2006" }}</small>
-    </p>
-
+    {{ with .Date }}
+        {{ partial "date.html" (dict "date" . "language" $.Page.Language "monate" $.Site.Data.monate) }}
+    {{ end }}
     {{ .Content }}
     </div>
     <!-- /.col-8 -->

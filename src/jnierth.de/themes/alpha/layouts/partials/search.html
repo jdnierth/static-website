@@ -1,0 +1,28 @@
+<input id="search" type="search" value="" placeholder="Suche"/>
+
+{{ $currentNode := . }}
+{{ $currentNode.Scratch.Set "pages" .Site.Pages }}
+{{ $pages := ($currentNode.Scratch.Get "pages") }}
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(function() {
+        var projects = [
+            {{ range $.Site.Pages }}
+                {
+                    value: "{{ .Title }}",
+                    label: "<p>{{.Plain}}</p>{{range.Params.Keywords}}<p>{{.}}</p>{{end}}",
+                    url:"{{ .Permalink }}"
+                },
+            {{ end }}
+        ];
+        $( "#search" ).autocomplete({
+            source: projects
+        })
+            .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+            return $( "<li>" )
+                .append( "<a href=" + item.url + " + \" &quot;\" +  >" + item.value + "</a>")
+                .appendTo( ul );
+        };
+    });
+</script>
