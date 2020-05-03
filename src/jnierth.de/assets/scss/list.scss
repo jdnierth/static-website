@@ -7,15 +7,11 @@
   margin: 5px 5px;
   position: relative;
   width: calc(100% / 4);
-
-  .title {
-    margin-left: 50px;
-  }
 }
 
 .date {
   $size: 80px;
-  background-color: rgba($primary, 0.5);
+  background-color: rgba($primary, 0.8);
   border-radius: 50%;
   color: #FFF;
   font-weight: bold;
@@ -39,5 +35,11 @@
 .image-gallery {
   .flex-item {
     width: calc(100% / 2 - 20px);
+  }
+}
+
+.project-list {
+  img {
+    filter: grayscale(100%);
   }
 }

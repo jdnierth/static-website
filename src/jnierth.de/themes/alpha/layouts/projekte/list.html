@@ -4,7 +4,7 @@
     <h1>Liste</h1>
     {{ $paginator := .Paginate (where .Pages "Type" "project") }}
 
-        <div class="flex-container">
+        <div class="flex-container project-list">
             {{ range .Paginator.Pages }}
                 {{ partial "project-list-item.html" .}}
             {{ end }}

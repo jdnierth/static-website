@@ -20,5 +20,6 @@ projectgroup: "Greenfield"
 responsive: true
 languages: ["Englisch"]
 cms: false
+preview: "/images/term-planner.jpg"
 ---
 Lorem ipsum

@@ -20,6 +20,7 @@ programmiersprachen: ["JavaScript", "LESS"]
 projectgroup: "Greenfield"
 responsive: ""
 server: false
+preview: "/images/sans-forgetica-1-960x600.jpg"
 ---
 
 Das RMIT, eine Universität in Melbourne, erarbeitete eine neue Schriftart die es Menschen erleichtern soll einmal
