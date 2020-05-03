@@ -1,11 +1,17 @@
-<h2>{{ .Title }}</h2>
+<div class="flex-item">
+    <h2 class="title">{{ .Title }}</h2>
 
-{{ with .Date }}
-    {{ partial "date.html" (dict "date" . "language" $.Page.Language "monate" $.Site.Data.monate) }}
-{{ end }}
-<p>
-{{ .Summary }}
-</p>
-<p>
-    <a class="readmore" href="{{ .RelPermalink }}">{{ i18n "readon" }}</a>
-</p>
+    {{ with .Date }}
+        <div class="date">
+            <span>{{ partial "date.html" (dict "date" . "language" $.Page.Language "monate" $.Site.Data.monate) }}</span>
+        </div>
+    <!-- /.date -->
+    {{ end }}
+    <p>
+    {{ .Summary }}
+    </p>
+    <p>
+        <a class="readmore" href="{{ .RelPermalink }}">{{ i18n "readon" }}</a>
+    </p>
+</div>
+<!-- /.flex-item -->

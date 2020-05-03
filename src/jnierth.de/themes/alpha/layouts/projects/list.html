@@ -3,35 +3,34 @@
     <div class="col-8">
         <h1>List</h1>
 
-    <!-- Loop through all posts -->
+    <!-- Loop through all projects -->
     {{ $paginator := .Paginate (where .Pages "Type" "project") }}
     {{ range .Paginator.Pages }}
         {{ partial "project-list-item.html" .}}
     {{ end }}
     <!-- End loop -->
-        {{ $test := i18n "programminglanguagetax" }}
-        {{ $test }}
-        <ul>
-            {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-            <li><a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a>
+
+    {{ $pltax := i18n "programminglanguagetax" }}
+    <ul>
+        {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+        <li><a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a>
+            <ul>
+                {{ range $key, $value := $taxonomy }}
+                    {{ if eq $key $pltax }}
+                <li>True {{ $key }} </li>
                 <ul>
-                    {{ range $key, $value := $taxonomy }}
-                    key: {{ $key }} {{ $value }}
-                    {{ if eq $key $test }}
-                    <li>True {{ $key }} </li>
-                    <ul>
-                        {{ range $value.Pages }}
-                        <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
-                        {{ end }}
-                    </ul>
-                    {{ end }}
+                    {{ range $value.Pages }}
+                    <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
                     {{ end }}
                 </ul>
-            </li>
-            {{ end }}
-        </ul>
+                {{ end }}
+                {{ end }}
+            </ul>
+        </li>
+        {{ end }}
+    </ul>
 
-        <!-- Pagination -->
+    <!-- Pagination -->
     {{ partial "page-navigation-numbers.html" . }}
 
     </div>

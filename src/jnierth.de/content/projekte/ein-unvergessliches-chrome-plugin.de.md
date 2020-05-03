@@ -32,3 +32,8 @@ Nach Aussagen der Wissenschaftler soll die Schriftart nur auf wenige Sätze ange
   Instruktionen finden sie [hier](https://chrome.google.com/webstore/detail/sans-forgetica-study-mode/jojbobbpjflbaekncckdbanjoakgpbbc?hl=en).
 
 {{< video id="PO2Eo6D5tNQ" class="flex-video" >}}
+
+{{< piclist >}}
+    {{< pic src="/images/sans-forgetica-1-960x600.jpg" alt="Test1" >}}
+    {{< pic src="/images/hair-happiness-1.jpg" alt="Test2" >}}
+{{</ piclist >}}

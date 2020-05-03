@@ -1,5 +1,5 @@
 {{ if eq "de" .language.Lang }}
-    <small>{{ .date.Day }}. {{ index .monate (printf "%d" .date.Month) }} {{ .date.Year }}</small>
+    <small>{{ .date.Day }}. {{ index .monate (printf "%d" .date.Month) }} {{ substr .date.Year 2 4 }}</small>
 {{ else }}
-    <small>{{ .date.Format "2. Jan 2006" }}</small>
+    <small>{{ .date.Format "01. Jan 06" }}</small>
 {{ end }}
