@@ -4,22 +4,22 @@ date: 2018-10-14T15:51:37+02:00
 draft: false
 type: "project"
 translationKey: "project"
-anwendungstypen: ["Plugin"]
-programmiersprachen: ["JavaScript", "LESS"]
-ide: "IntelliJ"
-server: false
 agency: Orchard
+anwendungstypen: ["Plugin"]
+backend: []
 client: RMIT
-private: true
+cms: false
 country: Australien
 frontend: ["Entwicklung"]
-backend: []
 general: ["Aufwandsschätzung", "Technische Dokumentation", "Entwicklung", "Deployment"]
+ide: "IntelliJ"
+languages: ["Englisch"]
 platforms: ["Desktop"]
+private: true
+programmiersprachen: ["JavaScript", "LESS"]
 projectgroup: "Greenfield"
 responsive: ""
-languages: ["Englisch"]
-cms: false
+server: false
 ---
 
 Das RMIT, eine Universität in Melbourne, erarbeitete eine neue Schriftart die es Menschen erleichtern soll einmal

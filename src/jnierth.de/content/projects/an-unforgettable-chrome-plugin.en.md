@@ -5,21 +5,21 @@ draft: false
 type: "project"
 translationKey: "project"
 applicationtypes: ["Plugin"]
-programminglanguages: ["JavaScript", "LESS"]
-ide: "IntelliJ"
-server: false
 agency: Orchard
+backend: []
 client: RMIT
-private: true
+cms: false
 country: Australien
 frontend: ["Development"]
-backend: []
 general: ["Aufwandsschätzung", "Technische Dokumentation", "Entwicklung", "Deployment"]
+ide: "IntelliJ"
+languages: ["Englisch"]
 platforms: ["Desktop"]
+private: true
+programminglanguages: ["JavaScript", "LESS"]
 projectgroup: "Greenfield"
 responsive: ""
-languages: ["Englisch"]
-cms: false
+server: false
 ---
 RMIT (University in Melbourne) created a new font which helps people to memorize content better. The font can be downloaded from this website for Windows or Mac to be used in Word documents or it can be used on websites through using a Chrome Plugin.
 
