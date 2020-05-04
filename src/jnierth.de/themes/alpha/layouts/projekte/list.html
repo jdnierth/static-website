@@ -13,26 +13,10 @@
     </div>
 
     <div class="col-12">
-    {{ $pltax := i18n "programminglanguagetax" }}
-    <ul>
-        {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-        <li><a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a>
-            <ul>
-                {{ range $key, $value := $taxonomy }}
-                {{ $key }}
-                <ul>
-                    {{ range $value.Pages }}
-                    <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
-                    {{ end }}
-                </ul>
-                {{ end }}
-            </ul>
-        </li>
-        {{ end }}
-    </ul>
+        {{ partial "project-tag-cloud-languages.html" .}}
     </div>
-    <!-- /.col-12 -->
 
+    <!-- Pagination -->
     {{ partial "page-navigation-numbers.html" . }}
 
 </div>

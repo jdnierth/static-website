@@ -26,3 +26,25 @@
 
 ## Multilingual site
 1. https://regisphilibert.com/blog/2018/08/hugo-multilingual-part-1-managing-content-translation/
+
+
+## Snippets
+`
+    {{ $pltax := i18n "programminglanguagetax" }}
+    <ul>
+        {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+        <li><a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a>
+            <ul>
+                {{ range $key, $value := $taxonomy }}
+                {{ $key }}
+                <ul>
+                    {{ range $value.Pages }}
+                    <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
+                    {{ end }}
+                </ul>
+                {{ end }}
+            </ul>
+        </li>
+        {{ end }}
+    </ul>
+`

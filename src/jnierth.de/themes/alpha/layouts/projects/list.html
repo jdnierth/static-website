@@ -1,38 +1,19 @@
 {{ define "main" }}
 <div class="container">
-    <div class="col-8">
+    <div class="col-12">
         <h1>List</h1>
-
-    <!-- Loop through all projects -->
-    {{ $paginator := .Paginate (where .Pages "Type" "project") }}
-    {{ range .Paginator.Pages }}
-        {{ partial "project-list-item.html" .}}
-    {{ end }}
-    <!-- End loop -->
-
-    {{ $pltax := i18n "programminglanguagetax" }}
-    <ul>
-        {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-        <li><a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a>
-            <ul>
-                {{ range $key, $value := $taxonomy }}
-                    {{ if eq $key $pltax }}
-                <li>True {{ $key }} </li>
-                <ul>
-                    {{ range $value.Pages }}
-                    <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
-                    {{ end }}
-                </ul>
-                {{ end }}
-                {{ end }}
-            </ul>
-        </li>
+        {{ $paginator := .Paginate (where .Pages "Type" "project") }}
+        {{ range .Paginator.Pages }}
+            {{ partial "project-list-item.html" .}}
         {{ end }}
-    </ul>
+    </div>
+
+    <div class="col-12">
+        {{ partial "project-tag-cloud-languages.html" .}}
+    </div>
 
     <!-- Pagination -->
     {{ partial "page-navigation-numbers.html" . }}
 
-    </div>
 </div>
 {{end}}
