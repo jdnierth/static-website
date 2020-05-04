@@ -1,17 +1,23 @@
 {{ if or (.Params.programminglanguages) }}
-<h3>Tag cloud {{ i18n "programminglanguages" }}</h3>
-<ul>xx
-    {{ range $key, $value := .Site.Taxonomies.programminglanguages.ByCount }}
-    <li><a href="/{{ $.Site.Language }}/{{ i18n "programminglanguagetax"| urlize }}/{{ $value.Name | urlize }}">{{ $value.Name | title }}</a> ({{ $value.Count }})</li>
-    {{ end }}
-</ul>
-{{ end }}
+<section>
+    <div class="col-12">
+        <div class="container">
+            <h3>Tag cloud {{ i18n "programminglanguages" }}</h3>
+            <ul>
+                {{ range $key, $value := .Site.Taxonomies.programminglanguages.ByCount }}
+                <li><a href="/{{ $.Site.Language }}/{{ i18n "programminglanguagetax"| urlize }}/{{ $value.Name | urlize }}">{{ $value.Name | title }}</a> ({{ $value.Count }})</li>
+                {{ end }}
+            </ul>
+            {{ end }}
 
-{{ if or (.Params.applicationtypes)}}
-<h3>Tag cloud {{ i18n "applicationtypes" }}</h3>
-<ul>
-    {{ range $key, $value := .Site.Taxonomies.applicationtypes.ByCount }}
-    <li><a href="/{{ $.Site.Language }}/{{ i18n "applicationtypes"| urlize }}/{{ $value.Name | urlize }}">{{ $value.Name | title }}</a> ({{ $value.Count }})</li>
-    {{ end }}
-</ul>
+            {{ if or (.Params.applicationtypes)}}
+            <h3>Tag cloud {{ i18n "applicationtypes" }}</h3>
+            <ul>
+                {{ range $key, $value := .Site.Taxonomies.applicationtypes.ByCount }}
+                <li><a href="/{{ $.Site.Language }}/{{ i18n "applicationtypes"| urlize }}/{{ $value.Name | urlize }}">{{ $value.Name | title }}</a> ({{ $value.Count }})</li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</section>
 {{ end }}
