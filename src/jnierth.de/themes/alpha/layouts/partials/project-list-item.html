@@ -1,5 +1,8 @@
 <div class="flex-item">
+    {{ if .Params.prevew }}
     <img src="{{ .Params.preview }}" alt="{{ .Title }}">
+    {{ end }}
+
     <h2 class="title">{{ .Title }}</h2>
 
     {{ with .Date }}
