@@ -1,19 +1,21 @@
 <div class="flex-item">
-    {{ if .Params.preview }}
-    <img src="{{ .Params.preview }}" alt="{{ .Title }}">
-    {{ end }}
+    <a href="{{ .RelPermalink }}">
+        {{ if .Params.preview }}
+        <img src="{{ .Params.preview }}" alt="{{ .Title }}">
+        {{ end }}
 
-    <h2 class="title">{{ .Title }}</h2>
+        <h2 class="title">{{ .Title }}</h2>
 
-    {{ with .Date }}
-        <div class="date">
-            <span>{{ partial "date.html" (dict "date" . "language" $.Page.Language "monate" $.Site.Data.monate) }}</span>
-        </div>
-    <!-- /.date -->
-    {{ end }}
-    <p>
-    {{ .Summary | truncate 150 }}
-    </p>
+        {{ with .Date }}
+            <div class="date">
+                <span>{{ partial "date.html" (dict "date" . "language" $.Page.Language "monate" $.Site.Data.monate) }}</span>
+            </div>
+        <!-- /.date -->
+        {{ end }}
+        <p>
+        {{ .Summary | truncate 150 }}
+        </p>
+    </a>
     <p>
         <a class="readmore" href="{{ .RelPermalink }}">{{ i18n "readon" }}</a>
     </p>
