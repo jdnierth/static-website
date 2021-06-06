@@ -1,13 +1,12 @@
 {{ define "main" }}
 <div class="container">
-    <h1>Taxonomy - {{ .Title }}</h1>
-
     <div class="col-12">
-    {{ range .Data.Pages }}
-        <div>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </div>
-    {{ end }}
+        <h1>Suchbegriff - {{ .Title }}</h1>
+        {{ range .Data.Pages }}
+            <div>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </div>
+        {{ end }}
     </div>
 </div>
 {{ end }}

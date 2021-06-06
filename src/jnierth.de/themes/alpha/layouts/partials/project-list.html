@@ -1,15 +1,16 @@
-<div class="container">
-    <div class="col-12">
-        <h1>{{ i18n "projects" }}</h1>
-        <div class="container flex-container">
-            {{ $paginator := .Paginate (where .Pages "Type" "project") }}
-            {{ range .Paginator.Pages }}
-                {{ partial "project-list-item.html" .}}
-            {{ end }}
+<section class="project-list">
+    <div class="container">
+        <div class="col-12">
+            <h1>{{ i18n "projects" }}</h1>
+            <div class="container flex-container">
+                {{ $paginator := .Paginate (where .Pages "Type" "project") }}
+                {{ range .Paginator.Pages }}
+                    {{ partial "project-list-item.html" .}}
+                {{ end }}
+            </div>
         </div>
     </div>
-</div>
-
+</section>
 <!-- Pagination -->
 {{ partial "page-navigation-numbers.html" . }}
 
